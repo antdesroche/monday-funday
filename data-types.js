@@ -9,8 +9,8 @@ const me = [{Name: 'Antonio Desroche', Age: '32'},
  console.log(me)
 console.log( 'This is my Bio', me )
 function Bio(me) {
-    return me.filter((Name) => {
-    return Name.Age > 0 
+    return me.reduce((Name) => {
+    return Name.Age > 1000 
    })
   }
   const { Age, Name, Education, Hobbies, Occupation } = me
