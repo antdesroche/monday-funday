@@ -4,9 +4,12 @@ let oldEnoughToGamble = ages.filter ((age) => {
 }
 )
 let info = oldEnoughToGamble.map ( (age) => {
-    let result = {}
+    let result = {
+        age: age,
+        display: age + 'is old enough to buy lottery'
+    }
     result.age = age
-    result.display = 'Old enough to buy lottery tickets'
+    result.display = 'is old enough to buy lottery'
     return result
 })
 
